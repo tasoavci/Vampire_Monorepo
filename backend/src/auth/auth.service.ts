@@ -77,7 +77,7 @@ export class AuthService {
             }
         });
 
-        const resetLink = `http://localhost:3000/auth/reset-password?token=${resetToken}&email=${email}`;
+        const resetLink = `${process.env.baseUrl}/auth/reset-password?token=${resetToken}&email=${email}`;
         await this.emailService.sendResetPasswordEmail(email, resetLink);
     }
     async resetPassword(token: string, newPassword: string): Promise<void> {
@@ -117,7 +117,7 @@ export class AuthService {
         return {
             accessToken: this.jwtService.sign(payload),
             refreshToken: this.jwtService.sign(payload, {
-                secret: 'your_refresh_token_secret',
+                secret: process.env.JWT_SECRET,
                 expiresIn: '7d'
             })
         };
