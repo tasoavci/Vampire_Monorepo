@@ -1,1 +1,8 @@
-{}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/play": "pages/play.js",
+  "/auth/reset-password": "pages/auth/reset-password.js",
+  "/auth/verify-email": "pages/auth/verify-email.js"
+}

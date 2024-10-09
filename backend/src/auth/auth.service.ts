@@ -77,7 +77,7 @@ export class AuthService {
             }
         });
 
-        const resetLink = `${process.env.baseUrl}/auth/reset-password?token=${resetToken}&email=${email}`;
+        const resetLink = `${process.env.baseURL}/auth/reset-password?token=${resetToken}&email=${email}`;
         await this.emailService.sendResetPasswordEmail(email, resetLink);
     }
     async resetPassword(token: string, newPassword: string): Promise<void> {
