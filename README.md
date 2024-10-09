@@ -1,6 +1,6 @@
 # Vampire-Villager Game Monorepo
 
-Welcome to the Vampire Village game repository! This project is a multiplayer, cross-platform game that can be played on both mobile devices and via a web interface. Players can participate in thrilling Vampire versus Villagers scenarios from anywhere, using just their phones or desktop browsers.
+Welcome to the Vampire-Villager game repository! This project is a multiplayer, cross-platform game that can be played on both mobile devices and via a web interface. Players can participate in thrilling Vampire versus Villagers scenarios from anywhere, using just their phones or desktop browsers.
 
 ## Technologies
 
